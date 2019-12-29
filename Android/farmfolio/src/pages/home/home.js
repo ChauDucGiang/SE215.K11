@@ -11,6 +11,7 @@ import {
   Image,
   View,
   TouchableOpacity,
+  TouchableHighlight,
 } from 'react-native';
 const {height, width} = Dimensions.get('window');
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -393,17 +394,62 @@ class Home extends Component {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  <Image
-                    source={require('../../../assets/frontend/wp-content/uploads/2016/11/Panama-Golden-Pineapple-Logo-2.jpg')}
-                    style={{
-                      width: 150,
-                      height: 150,
-                      borderWidth: 5,
-                      borderRadius: 75,
-                      borderColor: 'rgba(255,255,255,0.5)',
-                    }}
-                    resizeMethod={'scale'}
-                  />
+                  <TouchableHighlight
+                  // onPress={() => this.props.navigation.navigate('Detail')}
+                  >
+                    <Image
+                      source={require('../../../assets/frontend/wp-content/uploads/2016/11/Panama-Golden-Pineapple-Logo-2.jpg')}
+                      style={{
+                        width: 150,
+                        height: 150,
+                        borderWidth: 5,
+                        borderRadius: 75,
+                        borderColor: 'rgba(255,255,255,0.5)',
+                      }}
+                      resizeMethod={'scale'}
+                    />
+                  </TouchableHighlight>
+                  <View style={{position: 'relative'}}>
+                    <View
+                      style={{
+                        backgroundColor: '#000',
+                        width: 300,
+                        height: 30,
+                        // borderWidth: 5,
+                        borderRadius: 75,
+                      }}>
+                      <Image
+                        source={require('../../../assets/frontend/wp-content/themes/farmfolio/img/progress.jpg')}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          borderRadius: 30,
+                          // resizeMode: 'repeat',
+                        }}
+                      />
+                    </View>
+                    <Image
+                      source={require('../../../assets/frontend/wp-content/themes/farmfolio/img/progress-buble.png')}
+                      style={{
+                        height: 50,
+                        borderWidth: 5,
+                        borderRadius: 75,
+                        resizeMode: 'contain',
+                        position: 'absolute',
+                        top: -30,
+                        right: -17,
+                      }}
+                    />
+                    <Text
+                      style={{
+                        color: '#fff',
+                        position: 'absolute',
+                        top: -20,
+                        right: -17,
+                      }}>
+                      100%
+                    </Text>
+                  </View>
                 </ImageBackground>
               </View>
               <View style={styles.footerProject}>
@@ -472,17 +518,62 @@ class Home extends Component {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  <Image
-                    source={require('../../../assets/frontend/wp-content/uploads/2016/09/LogoGP2-01-01-01-01.png')}
-                    style={{
-                      width: 150,
-                      height: 150,
-                      borderWidth: 5,
-                      borderRadius: 75,
-                      borderColor: 'rgba(255,255,255,0.5)',
-                    }}
-                    resizeMethod={'scale'}
-                  />
+                  <TouchableHighlight
+                  // onPress={() => this.navigation.navigate('Detail')}
+                  >
+                    <Image
+                      source={require('../../../assets/frontend/wp-content/uploads/2016/09/LogoGP2-01-01-01-01.png')}
+                      style={{
+                        width: 150,
+                        height: 150,
+                        borderWidth: 5,
+                        borderRadius: 75,
+                        borderColor: 'rgba(255,255,255,0.5)',
+                      }}
+                      resizeMethod={'scale'}
+                    />
+                  </TouchableHighlight>
+                  <View style={{position: 'relative'}}>
+                    <View
+                      style={{
+                        backgroundColor: '#000',
+                        width: 300,
+                        height: 30,
+                        // borderWidth: 5,
+                        borderRadius: 75,
+                      }}>
+                      <Image
+                        source={require('../../../assets/frontend/wp-content/themes/farmfolio/img/progress.jpg')}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          borderRadius: 30,
+                          // resizeMode: 'repeat',
+                        }}
+                      />
+                    </View>
+                    <Image
+                      source={require('../../../assets/frontend/wp-content/themes/farmfolio/img/progress-buble.png')}
+                      style={{
+                        height: 50,
+                        borderWidth: 5,
+                        borderRadius: 75,
+                        resizeMode: 'contain',
+                        position: 'absolute',
+                        top: -30,
+                        right: -17,
+                      }}
+                    />
+                    <Text
+                      style={{
+                        color: '#fff',
+                        position: 'absolute',
+                        top: -20,
+                        right: -17,
+                      }}>
+                      100%
+                    </Text>
+                  </View>
                 </ImageBackground>
               </View>
               <View style={styles.footerProject}>
@@ -551,17 +642,62 @@ class Home extends Component {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  <Image
-                    source={require('../../../assets/frontend/wp-content/uploads/2019/09/Valle-Verde-Logo.png')}
-                    style={{
-                      width: 150,
-                      height: 150,
-                      borderWidth: 5,
-                      borderRadius: 75,
-                      borderColor: 'rgba(255,255,255,0.5)',
-                    }}
-                    resizeMethod={'scale'}
-                  />
+                  <TouchableHighlight
+                  // onPress={this.props.navigation.navigate('Detail')}
+                  >
+                    <Image
+                      source={require('../../../assets/frontend/wp-content/uploads/2019/09/Valle-Verde-Logo.png')}
+                      style={{
+                        width: 150,
+                        height: 150,
+                        borderWidth: 5,
+                        borderRadius: 75,
+                        borderColor: 'rgba(255,255,255,0.5)',
+                      }}
+                      resizeMethod={'scale'}
+                    />
+                  </TouchableHighlight>
+                  <View style={{position: 'relative'}}>
+                    <View
+                      style={{
+                        backgroundColor: '#000',
+                        width: 300,
+                        height: 30,
+                        // borderWidth: 5,
+                        borderRadius: 75,
+                      }}>
+                      <Image
+                        source={require('../../../assets/frontend/wp-content/themes/farmfolio/img/progress.jpg')}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          borderRadius: 30,
+                          // resizeMode: 'repeat',
+                        }}
+                      />
+                    </View>
+                    <Image
+                      source={require('../../../assets/frontend/wp-content/themes/farmfolio/img/progress-buble.png')}
+                      style={{
+                        height: 50,
+                        borderWidth: 5,
+                        borderRadius: 75,
+                        resizeMode: 'contain',
+                        position: 'absolute',
+                        top: -30,
+                        right: -17,
+                      }}
+                    />
+                    <Text
+                      style={{
+                        color: '#fff',
+                        position: 'absolute',
+                        top: -20,
+                        right: -17,
+                      }}>
+                      100%
+                    </Text>
+                  </View>
                 </ImageBackground>
               </View>
               <View style={styles.footerProject}>
@@ -924,7 +1060,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   viewPagerProjects: {
-    height: 200,
+    height: 550,
   },
   titleProject: {
     height: 100,
