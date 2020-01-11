@@ -359,10 +359,10 @@ class Home extends Component {
           <ViewPagerAndroid
             style={styles.viewPagerProjects}
             initialPage={0}
-            ref={'viewpager'}
-            onPageSelected={e =>
-              this.setState({curPage: e.nativeEvent.position})
-            }
+            // ref={'viewpager'}
+            // onPageSelected={e =>
+            //   this.setState({curPage: e.nativeEvent.position})
+            // }
             keyboardDismissMode={'on-drag'}>
             <View style={styles.pageStyle} key="1">
               <View style={styles.titleProject}>
@@ -394,8 +394,8 @@ class Home extends Component {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  <TouchableHighlight
-                  // onPress={() => this.props.navigation.navigate('Detail')}
+                  <TouchableOpacity
+                  onPress={() => this.props.navigation.navigate('Detail')}
                   >
                     <Image
                       source={require('../../../assets/frontend/wp-content/uploads/2016/11/Panama-Golden-Pineapple-Logo-2.jpg')}
@@ -407,8 +407,9 @@ class Home extends Component {
                         borderColor: 'rgba(255,255,255,0.5)',
                       }}
                       resizeMethod={'scale'}
+                      
                     />
-                  </TouchableHighlight>
+                  </TouchableOpacity>
                   <View style={{position: 'relative'}}>
                     <View
                       style={{
@@ -518,8 +519,8 @@ class Home extends Component {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  <TouchableHighlight
-                  // onPress={() => this.navigation.navigate('Detail')}
+                  <TouchableOpacity
+                  onPress={() => this.props.navigation.navigate('Detail')}
                   >
                     <Image
                       source={require('../../../assets/frontend/wp-content/uploads/2016/09/LogoGP2-01-01-01-01.png')}
@@ -532,7 +533,7 @@ class Home extends Component {
                       }}
                       resizeMethod={'scale'}
                     />
-                  </TouchableHighlight>
+                  </TouchableOpacity>
                   <View style={{position: 'relative'}}>
                     <View
                       style={{
@@ -642,8 +643,8 @@ class Home extends Component {
                     justifyContent: 'center',
                     alignItems: 'center',
                   }}>
-                  <TouchableHighlight
-                  // onPress={this.props.navigation.navigate('Detail')}
+                  <TouchableOpacity
+                  onPress={()=>this.props.navigation.navigate('Detail')}
                   >
                     <Image
                       source={require('../../../assets/frontend/wp-content/uploads/2019/09/Valle-Verde-Logo.png')}
@@ -656,7 +657,7 @@ class Home extends Component {
                       }}
                       resizeMethod={'scale'}
                     />
-                  </TouchableHighlight>
+                  </TouchableOpacity>
                   <View style={{position: 'relative'}}>
                     <View
                       style={{
