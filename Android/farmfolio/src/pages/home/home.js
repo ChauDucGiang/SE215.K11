@@ -837,13 +837,13 @@ class Home extends Component {
         <ImageBackground
           source={require('../../../assets/frontend/wp-content/uploads/2016/01/SupplyChainDark.jpg')}
           style={{width: width}}>
-          <Text>CÁC SẢN PHẨM ĐẶC TRƯNG</Text>
-          <Text>
+          <Text style={{textAlign: 'center',fontSize: 28, color: '#fff'}}>CÁC SẢN PHẨM ĐẶC TRƯNG</Text>
+          <Text style={{textAlign: 'center',fontSize: 20,color: '#fff'}}>
             Những sản phẩm có sẵn trong các dự án để tạo ra cổ tức dọc theo
             chuỗi cung ứng
           </Text>
           <ViewPagerAndroid
-            style={styles.viewPagerProjects}
+            style={{height: 300}}
             initialPage={0}
             ref={'viewproject'}
             onPageSelected={e =>
@@ -864,7 +864,7 @@ class Home extends Component {
                 }}>
                 <Image
                   source={require('../../../assets/frontend/wp-content/uploads/2017/05/Grapes.png')}
-                  style={{width: 130, height: 130, padding: 5}}
+                  style={{width: 130, padding: 5}}
                   resizeMode={'contain'}
                 />
               </View>
